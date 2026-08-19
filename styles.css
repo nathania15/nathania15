@@ -28,8 +28,8 @@ body {
 .hero-section {
     /* Membuat efek pink berkilau / tekstur bintang */
     background: radial-gradient(circle, #fdb0c0 10%, transparent 10%),
-                radial-gradient(circle, #fdb0c0 10%, transparent 10%),
-                #ff85a2;
+        radial-gradient(circle, #fdb0c0 10%, transparent 10%),
+        #ff85a2;
     background-size: 30px 30px;
     background-position: 0 0, 15px 15px;
     padding: 40px 20px;
@@ -47,7 +47,8 @@ body {
     gap: 20px;
     box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
     max-width: 1000px;
-    flex-wrap: wrap; /* Untuk layar kecil */
+    flex-wrap: wrap;
+    /* Untuk layar kecil */
     justify-content: center;
 }
 
@@ -56,7 +57,7 @@ body {
     background-color: white;
     padding: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.6), 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.6), 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img {
@@ -83,7 +84,8 @@ body {
 .nav-pills {
     display: flex;
     gap: 10px;
-    margin-left: auto; /* Mendorong ke kanan */
+    margin-left: auto;
+    /* Mendorong ke kanan */
 }
 
 .nav-pills a {
@@ -140,10 +142,21 @@ main {
 }
 
 /* Warna Masing-masing Card */
-.card-mint { background-color: #d1fae5; }
-.card-purple { background-color: #e9d5ff; }
-.card-yellow { background-color: #fef08a; }
-.card-peach { background-color: #ffcdda; }
+.card-mint {
+    background-color: #d1fae5;
+}
+
+.card-purple {
+    background-color: #e9d5ff;
+}
+
+.card-yellow {
+    background-color: #fef08a;
+}
+
+.card-peach {
+    background-color: #ffcdda;
+}
 
 /* Teks dan List di Card */
 .card ul {
@@ -151,7 +164,8 @@ main {
     padding: 0;
 }
 
-.card ul li, .card p {
+.card ul li,
+.card p {
     font-size: 14px;
     margin-bottom: 15px;
     line-height: 1.6;
@@ -170,9 +184,10 @@ main {
     border-radius: 15px;
     padding: 15px;
     margin-top: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     position: relative;
-    left: -10px; /* Sedikit keluar area kuning */
+    left: -10px;
+    /* Sedikit keluar area kuning */
     width: calc(100% + 20px);
 }
 
@@ -225,11 +240,12 @@ main {
 
 .cute-form input {
     padding: 12px 15px;
-    border-radius: 50px; /* Bentuk pil */
+    border-radius: 50px;
+    /* Bentuk pil */
     border: none;
     outline: none;
     font-family: 'Nunito', sans-serif;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .cute-form button {
@@ -244,7 +260,8 @@ main {
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(244, 114, 182, 0.4);
     transition: 0.3s;
-    align-self: flex-end; /* Tombol geser ke kanan */
+    align-self: flex-end;
+    /* Tombol geser ke kanan */
     width: max-content;
     padding-left: 20px;
     padding-right: 20px;
@@ -270,9 +287,10 @@ footer {
 /* Responsif untuk Layar Handphone */
 @media (max-width: 900px) {
     .card-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 Kolom di Tablet */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 Kolom di Tablet */
     }
-    
+
     .nav-pills {
         margin-left: 0;
         margin-top: 15px;
@@ -283,15 +301,16 @@ footer {
 
 @media (max-width: 600px) {
     .card-container {
-        grid-template-columns: 1fr; /* 1 Kolom di HP */
+        grid-template-columns: 1fr;
+        /* 1 Kolom di HP */
     }
-    
+
     .profile-container {
         border-radius: 30px;
         flex-direction: column;
         text-align: center;
     }
-    
+
     .nav-pills {
         flex-wrap: wrap;
     }
