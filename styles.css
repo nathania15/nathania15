@@ -1,0 +1,298 @@
+/* --- Reset & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(180deg, #fff0f5 0%, #ffe4e1 100%);
+    color: #333;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* --- Top Bar --- */
+.top-bar {
+    background-color: #ffb6c1;
+    color: #b71c5d;
+    text-align: center;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* --- Hero / Header Section --- */
+.hero-section {
+    /* Membuat efek pink berkilau / tekstur bintang */
+    background: radial-gradient(circle, #fdb0c0 10%, transparent 10%),
+                radial-gradient(circle, #fdb0c0 10%, transparent 10%),
+                #ff85a2;
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Kotak putih memanjang melengkung */
+.profile-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 100px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+    max-width: 1000px;
+    flex-wrap: wrap; /* Untuk layar kecil */
+    justify-content: center;
+}
+
+/* Efek bunga/awan di foto */
+.profile-pic-wrapper {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.6), 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Navigasi Pil Awan */
+.nav-pills {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* Mendorong ke kanan */
+}
+
+.nav-pills a {
+    text-decoration: none;
+    color: #b71c5d;
+    background-color: #fff0f5;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(255, 182, 193, 0.5);
+    transition: 0.3s;
+}
+
+.nav-pills a:hover {
+    background-color: #ffb6c1;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* --- Main Content Grid --- */
+main {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: start;
+}
+
+/* Desain Dasar Card */
+.card {
+    border-radius: 20px;
+    padding: 25px 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* Warna Masing-masing Card */
+.card-mint { background-color: #d1fae5; }
+.card-purple { background-color: #e9d5ff; }
+.card-yellow { background-color: #fef08a; }
+.card-peach { background-color: #ffcdda; }
+
+/* Teks dan List di Card */
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li, .card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.uph-link {
+    color: #6b21a8;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/* Card Melayang di Proyek (Putih) */
+.floating-project {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    position: relative;
+    left: -10px; /* Sedikit keluar area kuning */
+    width: calc(100% + 20px);
+}
+
+.floating-project h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #111;
+}
+
+.floating-project p {
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #555;
+}
+
+/* Card Kontak & Form */
+.contact-details h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin-bottom: 8px;
+}
+
+.contact-details a {
+    color: #b71c5d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.cute-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cute-form label {
+    font-weight: 800;
+    font-size: 14px;
+    color: #b71c5d;
+}
+
+.cute-form input {
+    padding: 12px 15px;
+    border-radius: 50px; /* Bentuk pil */
+    border: none;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.cute-form button {
+    background-color: #f472b6;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(244, 114, 182, 0.4);
+    transition: 0.3s;
+    align-self: flex-end; /* Tombol geser ke kanan */
+    width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cute-form button:hover {
+    background-color: #db2777;
+    transform: scale(1.05);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #ffb6c1;
+    color: #b71c5d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 4px solid #ff85a2;
+}
+
+/* Responsif untuk Layar Handphone */
+@media (max-width: 900px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 Kolom di Tablet */
+    }
+    
+    .nav-pills {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 Kolom di HP */
+    }
+    
+    .profile-container {
+        border-radius: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-pills {
+        flex-wrap: wrap;
+    }
+}
